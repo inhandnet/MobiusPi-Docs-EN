@@ -321,9 +321,8 @@ To install the dependent library for App with pip, you need to enable the debugg
  &nbsp;
 
   If a dependent library is installed for the App, you must configure the environment variables for the App before debugging; otherwise, the App cannot run normally during debugging.   
-  When the App does not run on the IG500, the App uses initial environment variables. When the App runs, the environment variables of the dependent library in the lib folder are automatically added.
+  When the App does not run on the IG500, the App uses initial environment variables. When the App runs, the environment variables of the dependent library in the lib folder are automatically added.<br/>
  &nbsp;
-
 
 - Step 5: Execute code to ensure that the App runs normally.
   ![](images/2020-01-03-11-39-45.png)
