@@ -12,7 +12,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
      ![](images/2020-01-02-09-55-52.png) <br/>
  &nbsp;
 
-  - Method 2: Set a fixed IP address on the same subnet with FE 0/1 of IG500 for the PC. Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  
+  - Method 2: Set a fixed IP address on the same subnet with FE 0/1 of IG500 for the PC. Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
   ![](images/2020-01-02-09-56-52.png)   
 <br/>
 
@@ -211,16 +211,18 @@ Before debugging code remotely, you need to upload the local code to a remote se
  &nbsp;
 
   You can check whether the remote server has received the App code in TERMINAL window. Enter the following commands in the TERMINAL window to show the uploaded App folder information:
-  >cd App  
+  ```
+  cd App  
   ls -l
-
+  ```
   ![](images/2020-01-02-18-25-11.png)
  &nbsp;
 
 - Step 2: Debug the script in the TERMINAL window.
   After the code is synchronized, enter the command as follows to run the script on IG500. When the script is running, check whether the running result in the TERMINAL window printing "hello world!".
-  >python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
-
+  ```
+  python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
+  ```
   - `192.168.1.1`: IP address of FE 0/1 on IG500
   - `3000`: recommended debugging port number
   - `HelloWorld/src/main.py`: execution path of `mian.py`, which should be modified according to your needs.
@@ -299,7 +301,9 @@ To install the dependent library for App with pip, you need to enable the debugg
  &nbsp;
 
 - Step 2: Run pip install + dependent library name + ==version number + -t + lib folder path of the App, and press Enter to install the dependent library. (If the version number is not included, pip automatically installs the dependent library of the latest version.) 
-  >pip install modbus_tk==1.1.0 -t /var/user/App/HelloWorld/lib/
+  ```
+  pip install modbus_tk==1.1.0 -t /var/user/App/HelloWorld/lib/
+  ```
 
   ![](images/2020-01-03-11-28-22.png)
  &nbsp;
@@ -309,16 +313,17 @@ To install the dependent library for App with pip, you need to enable the debugg
  &nbsp;
 
 - Step 4: Run the `export` command to set the environment variables for the App. Run the following commands in the TERMINAL window.
-  >export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/App/HelloWorld/lib/  
-
-  >export PYTHONPATH=$PYTHONPATH:/var/user/App/HelloWorld/lib/
-
+  ```
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/App/HelloWorld/lib/  
+  export PYTHONPATH=$PYTHONPATH:/var/user/App/HelloWorld/lib/
+  ```
   ![](images/2020-01-03-11-37-25.png)
  &nbsp;
 
   If a dependent library is installed for the App, you must configure the environment variables for the App before debugging; otherwise, the App cannot run normally during debugging.   
   When the App does not run on the IG500, the App uses initial environment variables. When the App runs, the environment variables of the dependent library in the lib folder are automatically added.
  &nbsp;
+
 
 - Step 5: Execute code to ensure that the App runs normally.
   ![](images/2020-01-03-11-39-45.png)
