@@ -27,7 +27,7 @@ In order to facilitate user development, Yinghantong provides development tools 
 ## **What can you get?**
 We will provide all the materials you need to achieve faster and better solutions based on the MobiusPi development platform, from typical applications to quick start to development platform architecture and API description. You can learn the use of the MobiusPi development platform from the [MobiusPi development platform documentation](https://ingateway-development-docs-en.readthedocs.io/en/latest/) and start developing customized APP applications suitable for your business.
 ## **Contact us**
-If you want to learn more about our products, please visit[official website](https://www.inhandnetworks.com/)。  <br/>
+If you want to learn more about our products, please visit [official website](https://www.inhandnetworks.com/)。  <br/>
 If you want to learn more about using the MobiusPi development platform, please visit our documentation site:
 - [Chinese](https://ingateway-development-docs.readthedocs.io/zh_CN/latest/index.html)
 - [English](https://ingateway-development-docs-en.readthedocs.io/en/latest/)
