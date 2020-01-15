@@ -25,9 +25,9 @@ MobiusPi is the code name of InGateway series software and hardware products of 
 MobiusPi has a Python development platform. Users can implement customized APP applications through the Python development platform to find the optimal business solution.  <br/>
 In order to facilitate user development, Yinghantong provides development tools such as instantiated Python APP release package, software development kit (SDK), instantiated Python APP source code,  API interface, and more! It provides users with typical cases while helping users build on existing Typical cases quickly implement customized solutions to help users increase product value and gain stronger competitiveness.
 ## **What can you get?**
-We will provide all the materials you need to achieve faster and better solutions based on the MobiusPi development platform, from typical applications to quick start to development platform architecture and API description. You can learn the use of the MobiusPi development platform from the [MobiusPi development platform documentation](https://ingateway-development-docs.readthedocs.io/zh_CN/latest/index.html) and start developing customized APP applications suitable for your business.
+We will provide all the materials you need to achieve faster and better solutions based on the MobiusPi development platform, from typical applications to quick start to development platform architecture and API description. You can learn the use of the MobiusPi development platform from the [MobiusPi development platform documentation](https://ingateway-development-docs-en.readthedocs.io/en/latest/) and start developing customized APP applications suitable for your business.
 ## **Contact us**
-If you want to learn more about our products, please visit[official website](https://www.inhand.com.cn/)。  <br/>
+If you want to learn more about our products, please visit [official website](https://www.inhandnetworks.com/)。  <br/>
 If you want to learn more about using the MobiusPi development platform, please visit our documentation site:
 - [Chinese](https://ingateway-development-docs.readthedocs.io/zh_CN/latest/index.html)
 - [English](https://ingateway-development-docs-en.readthedocs.io/en/latest/)
