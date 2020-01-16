@@ -32,7 +32,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
 ![](images/2020-01-02-10-02-28.png)  
 
 #### 1.3 Connect IG500 to the Internet
-- Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the gateway.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
+- Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG500.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
 
   ![](images/2020-01-02-10-10-25.png) <br/>
  &nbsp;
@@ -97,12 +97,12 @@ Select the required Python interpreter. In this source, Python 3.7.X interpreter
 
 #### 3.3 Configure Project Templates
 ##### 3.3.1 Use the Standard Project Templates of InHand
-- Step 1: Download MobiusPi project template from [here](https://github.com/inhandnet/MobiuspiProjectTemplates/releases).  
+- Step 1: Download MobiusPi project template from [here](https://github.com/inhandnet/MobiuspiProjectTemplates/releases).  </br>
 MobiusPi provides various project templates for you to quickly initialize project directories. For details about project templates, see [README.md](https://github.com/inhandnet/MobiuspiProjectTemplates). This course uses the standard project template "helloworld-template" as an example.  
 ![](images/2019-12-25-09-39-17.png)
  &nbsp;
 
-- Step 2: Open a project template.  
+- Step 2: Open a project template.  </br>
 Decompress the downloaded project template package, run VS Code to open the helloworld-template folder, choose File > Open Folder, and select the helloworld-template folder.
 ![](images/2020-01-02-10-30-55.png)
  &nbsp;
@@ -115,7 +115,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
     - `main.py`: App entrance
     - `parse_config.py`: App configuration file parsing
   - `config.yaml`: App configuration file
-  - `setup.py`: information such as App version and SDK version
+  - `setup.py`: information such as App version and SDK version  
 
   ![](images/2020-01-02-13-12-52.png)
  &nbsp;
@@ -138,8 +138,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
   - `setup.py`: information such as App version and SDK version. It is recommended to customize the information based on the standard template.
    &nbsp;
 
-- Step 2: Open a project template.
-  Run VS Code to open the custom project template folder, choose File > Open Folder, and select the custom project template folder. For more information, see "3.3.1 Use the Standard Project Templates of InHand" in the section 1.
+- Step 2: Run VS Code to open the custom project template folder, choose File > Open Folder, and select the custom project template folder. For more information, see "3.3.1 Use the Standard Project Templates of InHand" in the section 1.
  &nbsp;
 
 - Step 3: Enter `>Project:Save Project as Template` on the command interface to save the current project file as a template. For more information, see "3.3.1 Use the Standard Project Templates of InHand" in the section 1.
@@ -225,7 +224,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
   ```
   - `192.168.1.1`: IP address of FE 0/1 on IG500
   - `3000`: recommended debugging port number
-  - `HelloWorld/src/main.py`: execution path of `mian.py`, which should be modified according to your needs.
+  - `HelloWorld/src/main.py`: execution path of `mian.py`, which should be modified according to your needs.  <br/>
 
   The Python development environment of IG500 has a built-in ptvsd dependent library for remote code debugging. To learn about more usage information about ptvsd plug-in, see [ptvsd usage](https://github.com/microsoft/ptvsd/).
   ![](images/2020-01-02-18-27-40.png)
@@ -238,7 +237,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ### 4. Construct App Release Package
 When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other IG500s.
 - Step 1: Construct an App release package.
-  Run the `build_py_App.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_App.sh project name.
+  Run the `build_py_App.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_App.sh Python App name.
 ![](images/2020-01-02-18-31-55.png)
  &nbsp;
 
@@ -248,7 +247,7 @@ When the debugging is completed, you can construct the App release package so th
  &nbsp;
 
   After the download is completed, you can see the HelloWorld App release package in the build directory.
-![](images/1/2/2020-18-32-54.png)
+![](images/2020-01-02-18-32-54.png)
 
 ### 5. Deploy App on the InGateway Web Page
 After you run the App release package construction command, the App is automatically installed on the connected IG500. To deploy the App to another IG500, you can choose Edge Computing > Python Edge Computing > Application Program > Configure on the other IG500, and import and upload the App release package. The deployment procedure is as follows:
@@ -266,7 +265,7 @@ After you run the App release package construction command, the App is automatic
 ![](images/2020-01-03-10-56-50.png)
  &nbsp;
 
-  On the App status interface, you can see that the App has successfully run on the gateway. The HelloWorld App deployment is completed.
+  On the App status interface, you can see that the App has successfully run on the IG500. The HelloWorld App deployment is completed.
 ![](images/2020-01-03-10-59-08.png)
 
 ### 6. Check App Status
