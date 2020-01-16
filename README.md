@@ -1,11 +1,11 @@
-# **Welcome to Yinghantong MobiusPi development platform!**
+# **Welcome to InHand MobiusPi development platform!**
 <center><p>
 
 ![](images/2020-01-06-16-46-51.png)
 </p></center>
 
 ## **What is MobiusPi？**
-MobiusPi is the code name of InGateway series software and hardware products of Beijing Yinghantong Network Technology Co., Ltd. The InGateway series includes two product series, the InGateway900 and InGateway500 series.  <br/>
+MobiusPi is the code name of InGateway series software and hardware products of InHand Networks. The InGateway series includes two product series, the InGateway900 and InGateway500 series.  <br/>
 ### InGateway900 Product Features
 -LTE / 3G / Ethernet / Wi-Fi network access  <br/>
 -Powerful edge computing, network edge data processing  <br/>
@@ -23,7 +23,7 @@ MobiusPi is the code name of InGateway series software and hardware products of 
 -Support industrial protocols to help users solve more interconnection problems
 ## **Customizable Python development platform**
 MobiusPi has a Python development platform. Users can implement customized APP applications through the Python development platform to find the optimal business solution.  <br/>
-In order to facilitate user development, Yinghantong provides development tools such as instantiated Python APP release package, software development kit (SDK), instantiated Python APP source code,  API interface, and more! It provides users with typical cases while helping users build on existing Typical cases quickly implement customized solutions to help users increase product value and gain stronger competitiveness.
+In order to facilitate user development, InHand provides development tools such as instantiated Python APP release package, software development kit (SDK), instantiated Python APP source code,  API interface, and more! It provides users with typical cases while helping users build on existing Typical cases quickly implement customized solutions to help users increase product value and gain stronger competitiveness.
 ## **What can you get?**
 We will provide all the materials you need to achieve faster and better solutions based on the MobiusPi development platform, from typical applications to quick start to development platform architecture and API description. You can learn the use of the MobiusPi development platform from the [MobiusPi development platform documentation](https://ingateway-development-docs-en.readthedocs.io/en/latest/) and start developing customized APP applications suitable for your business.
 ## **Contact us**
