@@ -8,7 +8,7 @@
 
 Mobiuspi is the edge computing platform of Beijing InHand Network Technology Co., Ltd. At present, the product lines supporting MobiusPi edge computing platform include InGateway900 and InGateway500. 
 
-### InGateway900 Product Features
+### [InGateway900](https://www.inhandnetworks.com/products/edge-computing-gateway.html) Product Features
 
 - LTE/3G/Ethernet / Wi-Fi network access
 - Powerful edge computing, network edge data processing
