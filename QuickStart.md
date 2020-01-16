@@ -211,7 +211,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 
   You can check whether the remote server has received the App code in TERMINAL window. Enter the following commands in the TERMINAL window to show the uploaded App folder information:
   ```
-  cd App  
+  cd app  
   ls -l
   ```
   ![](images/2020-01-02-18-25-11.png)
@@ -251,7 +251,7 @@ When the debugging is completed, you can construct the App release package so th
 ![](images/2020-01-02-18-32-54.png)
 
 ### Deploy App on the InGateway Web Page
-After you run the App release package construction command, the App is automatically installed on the connected IG500. To deploy the App to another IG500, you can choose Edge Computing > Python Edge Computing > Application Program > Configure on the other IG500, and import and upload the App release package. The deployment procedure is as follows:
+After you run the App release package construction command, the App is automatically generated on the connected IG500, but this APP cannot be started normally. Please follow the procedure to deploy APP to IG500:
 - Step 1: Upload the App.
   Choose Edge Computing > Python Edge Computing > Application Program > Configure on the IG500, and click the add button.
 ![](images/2020-01-03-09-38-24.png)
@@ -301,7 +301,7 @@ To install the dependent library for App with pip, you need to enable the debugg
 
 - Step 2: Run pip install + dependent library name + ==version number + -t + lib folder path of the App, and press Enter to install the dependent library. (If the version number is not included, pip automatically installs the dependent library of the latest version.) 
   ```
-  pip install modbus_tk==1.1.0 -t /var/user/App/HelloWorld/lib/
+  pip install xlrd==1.2.0 -t /var/user/app/HelloWorld/lib/
   ```
 
   ![](images/2020-01-03-11-28-22.png)
@@ -313,8 +313,8 @@ To install the dependent library for App with pip, you need to enable the debugg
 
 - Step 4: Run the `export` command to set the environment variables for the App. Run the following commands in the TERMINAL window.
   ```
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/App/HelloWorld/lib/  
-  export PYTHONPATH=$PYTHONPATH:/var/user/App/HelloWorld/lib/
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/app/HelloWorld/lib/  
+  export PYTHONPATH=$PYTHONPATH:/var/user/app/HelloWorld/lib/
   ```
   ![](images/2020-01-03-11-37-25.png)
  &nbsp;
