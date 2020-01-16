@@ -135,7 +135,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
   - `src`: folder of App source code
     - `main.py`: App entrance
   - `config.yaml`: App configuration file, of which the content can be customized
-  - `setup.py`: information such as App version and SDK version. It is recommended to customize the information based on the standard template.
+  - `setup.py`: information such as App version and SDK version. It is recommended to customize the information based on the standard template.  <br/>
    &nbsp;
 
 - Step 2: Run VS Code to open the custom project template folder, choose File > Open Folder, and select the custom project template folder.
@@ -288,8 +288,7 @@ Click the log viewing icon to display the running log of the App.
 ![](images/2020-01-03-11-02-59.png)
  &nbsp;
 
-After the restart, the HelloWorld App runs with the modified configuration file. That is, it prints a "hello inhand!" log every 10s.
-
+After the restart, the HelloWorld App runs with the modified configuration file. That is, it prints a "hello inhand!" log every 10s.  
 ![](./images/2019-12-06-15-20-04.png)
 ### Appendix
 #### Use pip to Install the Dependent Library for App
