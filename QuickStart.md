@@ -1,5 +1,5 @@
 # **Chapter 1 MobiusPi Python Development Quick Start**
-MobiusPi is the code name of InGateway series software and hardware products of Beijing Yinghantong Network Technology Co., Ltd.  <br/>The InGateway series includes two product series, the InGateway900 and InGateway500 series. This document uses the InGateway500(IG500 for short) series product as an example to demonstrate how to develop MobiusPi Python.
+MobiusPi is the code name of InGateway series software and hardware products of InHand Networks.  <br/>The InGateway series includes two product series, the InGateway900 and InGateway500 series. This document uses the InGateway500(IG500 for short) series product as an example to demonstrate how to develop Python App with MobiusPI.
 ## Section 1 Building the MobiusPi Development Environment
 ### 1. Prepare IG500 Hardware and Network Environment
 #### 1.1 Connect IG500 to the Power Source and to a PC with a Network Cable
