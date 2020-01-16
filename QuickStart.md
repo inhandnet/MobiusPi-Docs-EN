@@ -1,11 +1,11 @@
-# **Chapter 1 MobiusPi Python Development Quick Start**
+# **MobiusPi Python Development Quick Start**
 MobiusPi is the code name of InGateway series software and hardware products of InHand Networks.  <br/>The InGateway series includes two product series, the InGateway900 and InGateway500 series. This document uses the InGateway500(IG500 for short) series product as an example to demonstrate how to develop Python App with MobiusPI.
-## Section 1 Building the MobiusPi Development Environment
-### 1. Prepare IG500 Hardware and Network Environment
-#### 1.1 Connect IG500 to the Power Source and to a PC with a Network Cable
+## Building the MobiusPi Development Environment
+### Prepare IG500 Hardware and Network Environment
+#### Connect IG500 to the Power Source and to a PC with a Network Cable
 Connect IG500 to the power source and to a PC with an Ethernet cable according to the topology diagram.
 ![](images/2020-01-02-09-45-35.png)
-#### 1.2 Set LAN Parameters: Access the IG500 Through LAN
+#### Set LAN Parameters: Access the IG500 Through LAN
 - Step 1: Set the PC's IP address to be on the same subnet with FE 0/1. By default, the IP address of FE 0/1 on IG500 is 192.168.1.1.  
   - Method 1: Enable the PC to obtain an IP address automatically (recommended).  
 
@@ -16,7 +16,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
   ![](images/2020-01-02-09-56-52.png)   
 <br/>
 
-- Step 2: Launch the browser on the PC and access the IP address of FE 0/1. Enter the login user name and password. The default user name and password are adm and 123456 respectively.
+- Step 2: Launch the browser on the PC and access the IP address of FE 0/1. Enter the login user name and password. The default user name and password are adm and 123456 respectively.  
    ![](images/2020-01-02-18-22-09.png)
  &nbsp;
 
@@ -31,7 +31,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
 - Step 5: To change the IP address of FE 0/1, choose Network > Ethernet > Configure to configure FE 0/1.
 ![](images/2020-01-02-10-02-28.png)  
 
-#### 1.3 Connect IG500 to the Internet
+#### Connect IG500 to the Internet
 - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG500.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
 
   ![](images/2020-01-02-10-10-25.png) <br/>
@@ -44,7 +44,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
   When the network connection status is Connected and an IP address has been allocated, the IG500 has been connected to the Internet with the SIM card.  
 ![](images/2020-01-03-11-30-47.png)
 
-#### 1.4 Update the Software
+#### Update the Software
 To obtain the latest version of IG500 and updated functions, contact the customer service center. To update the IG500 firmware or Python SDK, do as follows:
 - Update the IG500 firmware.  
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.
@@ -55,27 +55,27 @@ To obtain the latest version of IG500 and updated functions, contact the custome
 Choose Edge Computing > Python Edge Computing > Edge Computing Engine. Select Python Engine, select an SDK file, and click Upgrade. Then the IG500 automatically performs the upgrade.
 ![](images/2020-01-02-10-14-59.png)
 
-#### 1.5 Enable the Debug Mode of IG500
+#### Enable the Debug Mode of IG500
 If you need to run and debug Python code on IG500 during development, you need enable the debug mode for IG500. Choose Edge Computing > Python Edge Computing > Edge Computing Engine and select Enable Debug Mode. Then you can develop IG500 with VS Code.
 ![](images/2020-01-02-10-16-23.png)
  &nbsp;
 
 After the debugging mode is enabled, IG500 will start an SSH server to listen on port 222 of LAN (default IP address being 192.168.1.1). The user name and password of the SSH server are displayed on the previous web page. A random password is generated every time the debugging mode is enabled or the IG500 is restarted to ensure security.
 
-### 2. Install Software on PC
-#### 2.1 Install a Python Interpreter
+### Install Software on PC
+#### Install a Python Interpreter
 The PC must be installed with a Python2.7.X or 3.7.X interpreter (3.7.X is recommended). You can visit https://www.python.org/downloads/ to download the installation package and install it on your PC.
 ![](./images/2019-11-08-16-03-16.png)
 
-#### 2.2 Install Visual Studio Code
+#### Install Visual Studio Code
 Obtain the Visual Studio Code software (VS Code for short) from https://code.visualstudio.com/Download.
 ![](./images/2019-11-29-15-28-59.png)
  &nbsp;
 
 Download the software and run the installation program. After the software is successfully installed, launch the VS Code software, as shown below.
 ![](images/2020-01-02-10-17-13.png)
-### 3. Prepare the Development Environment of VS Code
-#### 3.1 Install the VS Code Plug-ins
+### Prepare the Development Environment of VS Code
+#### Install the VS Code Plug-ins
 To develop and debug Python code on IG500, you need to install the following plug-ins in Extensions of VS Code IDE.  
 - `Python`: a VS Code Python plug-in with abundant functions and features, including IntelliSense, linting, debugging, code navigation, code formatting, Jupyter notebook support, refactoring, variable explorer, test explorer, snippets, and more! To get more information, visit the [official website](https://code.visualstudio.com/docs/languages/python) of the plug-in.  
 - `Project Templates`: a VS Code extended plug-in used to quickly create projects based on custom templates. We will release several Python App templates. You can use Project Templates to import templates and quickly initialize projects.  
@@ -87,7 +87,7 @@ To develop and debug Python code on IG500, you need to install the following plu
 
 Now, all the plug-ins required for developing MobiusPi edge computing platform are installed. To know more about VS Code plug-ins, visit [Visual Studio Code official website](https://code.visualstudio.com/).
 
-#### 3.2 Configure the Python Interpreter Version
+#### Configure the Python Interpreter Version
 Use the shortcut keys `Ctrl+Shift+P` to display the command interface. Enter `>Python:select Interpreter`  in the command interface.
 ![](images/2020-01-02-10-25-16.png)
  &nbsp;
@@ -95,11 +95,11 @@ Use the shortcut keys `Ctrl+Shift+P` to display the command interface. Enter `>P
 Select the required Python interpreter. In this source, Python 3.7.X interpreter is used. (The selected interpreter version should be the same as that in Edge Computing > Python Edge Computing > Edge Computing Engine.) Then the selected Python interpreter version is displayed on the left bottom of the VS Code interface.
 ![](images/2020-01-02-10-26-30.png)
 
-#### 3.3 Configure Project Templates
-##### 3.3.1 Use the Standard Project Templates of InHand
+#### Configure Project Templates
+##### Use the Standard Project Templates of InHand
 - Step 1: Download MobiusPi project template from [here](https://github.com/inhandnet/MobiuspiProjectTemplates/releases).  </br>
 MobiusPi provides various project templates for you to quickly initialize project directories. For details about project templates, see [README.md](https://github.com/inhandnet/MobiuspiProjectTemplates). This course uses the standard project template "helloworld-template" as an example.  
-![](images/2019-12-25-09-39-17.png)
+![](images/2020-01-16-14-18-53.png)
  &nbsp;
 
 - Step 2: Open a project template.  </br>
@@ -127,7 +127,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
   Name your template, for example, helloworld-template.
 ![](images/2020-01-02-13-14-51.png)
 
-##### 3.3.2 Customize Project Template
+##### Customize Project Template
 - Step 1: Create a project template folder, which must include the following content. You can add other information according to your needs.
   - `.vscode`: VS Code configuration folder (Entering `>SFTP:Config` on the VS Code command interface can quickly create a .vscode folder and an sftp.json file.)
     - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the IG500
@@ -138,14 +138,14 @@ Decompress the downloaded project template package, run VS Code to open the hell
   - `setup.py`: information such as App version and SDK version. It is recommended to customize the information based on the standard template.
    &nbsp;
 
-- Step 2: Run VS Code to open the custom project template folder, choose File > Open Folder, and select the custom project template folder. For more information, see "3.3.1 Use the Standard Project Templates of InHand" in the section 1.
+- Step 2: Run VS Code to open the custom project template folder, choose File > Open Folder, and select the custom project template folder.
  &nbsp;
 
-- Step 3: Enter `>Project:Save Project as Template` on the command interface to save the current project file as a template. For more information, see "3.3.1 Use the Standard Project Templates of InHand" in the section 1.
+- Step 3: Enter `>Project:Save Project as Template` on the command interface to save the current project file as a template.
 
-## Section 2 Compiling the First MobiusPi App: Hello World
+## Compiling the First MobiusPi App: Hello World
 In this course, an App named HelloWorld is used as an example to describe how to develop Python Apps with VS code on IG500. This App can print a "hello world!" log on IG500 every 10s, import configuration files to modify log content.
-### 1. Use Template to Create Project
+### Use Template to Create Project
 - Step 1: Use VS Code to open the Python App project folder, as shown below:
 ![](images/2020-01-02-10-36-39.png)
  &nbsp;
@@ -161,13 +161,13 @@ In this course, an App named HelloWorld is used as an example to describe how to
   After you select a template, VS Code automatically adds the files included in the template to the current project directory.
 ![](images/2020-01-02-10-42-36.png)
 
-### 2. Coding
+### Coding
 The standard project template helloworld-template can print a "hello world!" log on IG500 every 10s, import configuration files to modify log content. To change the App name, modify the code in `main.py` and `setup.py` as follows: <font color=#FF0000>(Note: The Python App names cannot contain spaces.) </font>
 ![](images/2020-01-02-16-21-11.png)
 ![](images/2020-01-02-16-22-29.png)
 
-### 3. Debugging
-#### 3.1 Set Up an SFTP Connection
+### Debugging
+#### Set Up an SFTP Connection
 Before debugging code remotely, you need to upload the local code to a remote server, namely, the IG500. Before uploading the code, ensure that the debug mode of IG500 has been enabled as follows:
 ![](images/2020-01-02-16-24-51.png)
  &nbsp;
@@ -203,7 +203,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
   When the SFTP connection is successfully set up with IG500, the following information is displayed:
 ![](images/2020-01-02-18-23-49.png)
 
-#### 3.2. Debug Code
+#### Debug Code
 - Step 1: Synchronize code.
   After the SFTP connection is set up, right-click on a blank space in the left area and choose Sync Local > Remote from the shortcut menu to synchronize the local code to the remote server. After the code is synchronized, the modification or deletion of the local code will also be synchronized to the remote server.
 ![](images/2020-01-02-18-24-27.png)
@@ -225,6 +225,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
   - `192.168.1.1`: IP address of FE 0/1 on IG500
   - `3000`: recommended debugging port number
   - `HelloWorld/src/main.py`: execution path of `mian.py`, which should be modified according to your needs.  <br/>
+&nbsp;
 
   The Python development environment of IG500 has a built-in ptvsd dependent library for remote code debugging. To learn about more usage information about ptvsd plug-in, see [ptvsd usage](https://github.com/microsoft/ptvsd/).
   ![](images/2020-01-02-18-27-40.png)
@@ -234,7 +235,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 - Step 3: After debugging is completed, press `Ctrl + C` on terminal to terminate the debugging.
 ![](images/2020-01-02-18-30-13.png)
 
-### 4. Construct App Release Package
+### Construct App Release Package
 When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other IG500s.
 - Step 1: Construct an App release package.
   Run the `build_py_App.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_App.sh Python App name.
@@ -249,7 +250,7 @@ When the debugging is completed, you can construct the App release package so th
   After the download is completed, you can see the HelloWorld App release package in the build directory.
 ![](images/2020-01-02-18-32-54.png)
 
-### 5. Deploy App on the InGateway Web Page
+### Deploy App on the InGateway Web Page
 After you run the App release package construction command, the App is automatically installed on the connected IG500. To deploy the App to another IG500, you can choose Edge Computing > Python Edge Computing > Application Program > Configure on the other IG500, and import and upload the App release package. The deployment procedure is as follows:
 - Step 1: Upload the App.
   Choose Edge Computing > Python Edge Computing > Application Program > Configure on the IG500, and click the add button.
@@ -268,14 +269,14 @@ After you run the App release package construction command, the App is automatic
   On the App status interface, you can see that the App has successfully run on the IG500. The HelloWorld App deployment is completed.
 ![](images/2020-01-03-10-59-08.png)
 
-### 6. Check App Status
+### Check App Status
 Choose Edge Computing > Python Edge Computing > Application Program > Status on the IG500. You can see the running status of the App.
 ![](images/2020-01-03-10-59-41.png)
 
 Click the log viewing icon to display the running log of the App.
 ![](images/2020-01-03-11-00-15.png)
 ![](./images/2019-12-05-14-54-03.png)
-### 7. Update Configuration File for App
+### Update Configuration File for App
 - Step 1: Modify the configuration file.
   Modify ```description:"hello world!"``` in the config.yaml file of the App into  ```description: "hello inhand!"```.  
 ![](./images/2019-12-05-14-54-34.png) <br/>
@@ -290,12 +291,12 @@ Click the log viewing icon to display the running log of the App.
 After the restart, the HelloWorld App runs with the modified configuration file. That is, it prints a "hello inhand!" log every 10s.
 
 ![](./images/2019-12-06-15-20-04.png)
-### 8. Appendix
-#### 8.1 Use pip to Install the Dependent Library for App
+### Appendix
+#### Use pip to Install the Dependent Library for App
 To install the dependent library for App with pip, you need to enable the debugging mode for the IG500 and connect the IG500 to the Internet.
 ![](images/2020-01-03-11-03-50.png)
 ![](images/2020-01-03-11-30-19.png)
-- Step 1: Use VS Code to set up an SFTP connection with the IG500. For details, see "3.1 Set Up an SFTP Connection" in the section 2.
+- Step 1: Use VS Code to set up an SFTP connection with the IG500. For details, see [Set Up an SFTP Connection](https://ingateway-development-docs-en.readthedocs.io/en/latest/QuickStart.html#set-up-an-sftp-connection).
 ![](images/2020-01-03-11-07-08.png)
  &nbsp;
 
@@ -326,7 +327,7 @@ To install the dependent library for App with pip, you need to enable the debugg
 - Step 5: Execute code to ensure that the App runs normally.
   ![](images/2020-01-03-11-39-45.png)
 
-#### 8.2 Enable Automatic Code Completion
+#### Enable Automatic Code Completion
 To improve the coding efficiency, enable automatic code completion by using Python extended plug-ins.
 - Step 1: Choose File > Preferences > Settings.
 ![](images/2020-01-03-14-06-54.png)
@@ -347,7 +348,7 @@ To improve the coding efficiency, enable automatic code completion by using Pyth
   ```
   ![](images/2020-01-03-14-10-41.png)
 
-#### 8.3 FAQs
+#### FAQs
 - Q1: What Can I Do If the Remote Host Key Is Change and Verification Fails During the Setup of an SFTP Connection?
 ![](images/2020-01-03-14-28-23.png)
  &nbsp;
