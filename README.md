@@ -1,8 +1,8 @@
 # **Welcome to InHand MobiusPi development platform!**
-<center><p>
+<div align=center>
 
-![](images/2020-01-06-16-46-51.png)
-</p></center>
+  ![](images/2020-01-06-16-46-51.png)
+</div>
 
 ## **What is MobiusPi？**
 MobiusPi is the code name of InGateway series software and hardware products of InHand Networks. The InGateway series includes two product series, the InGateway900 and InGateway500 series.  <br/>
