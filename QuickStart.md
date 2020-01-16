@@ -238,7 +238,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ### Construct App Release Package
 When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other IG500s.
 - Step 1: Construct an App release package.
-  Run the `build_py_App.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_App.sh Python App name.
+  Run the `build_py_app.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_app.sh Python App name.
 ![](images/2020-01-02-18-31-55.png)
  &nbsp;
 
