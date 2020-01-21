@@ -173,12 +173,12 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ![](images/2020-01-02-16-24-51.png)
  &nbsp;
 
-- Step 1: Open the `sftp.json` file.
+- Step 1: Open the `sftp.json` file.  <br/>
   Enter `>SFTP:Config` on the command interface to open the `sftp.json` file.
 ![](images/2020-01-02-16-25-48.png)
  &nbsp;
 
-- Step 2: Configure the SFTP connection.
+- Step 2: Configure the SFTP connection.  <br/>
   In the `sftp.json` file, configure the SFTP connection according to the parameters on the Edge Computing > Python Edge Computing > Edge Computing Engine interface.
   <font color=#FF0000>Note: The Python App name must be the same as the App name in `mian.py`. </font>
 
@@ -238,12 +238,12 @@ Before debugging code remotely, you need to upload the local code to a remote se
 
 ### Construct App Release Package
 When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other IG500s.
-- Step 1: Construct an App release package.
+- Step 1: Construct an App release package.  <br/>
   Run the `build_py_app.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_app.sh Python App name.
 ![](images/2020-01-02-18-31-55.png)
  &nbsp;
 
-- Step 2: Download the App release package.
+- Step 2: Download the App release package.  <br/>
   An App release package is automatically generated in the build directory on the remote server. Right-click the local build folder and click Download Folder to download the constructed App release package for future deployment.
 ![](images/2020-01-02-18-32-25.png)
  &nbsp;
@@ -253,7 +253,7 @@ When the debugging is completed, you can construct the App release package so th
 
 ### Deploy App on the InGateway Web Page
 After you run the App release package construction command, the App is automatically generated on the connected IG500, but this APP cannot be started normally. Please follow the procedure to deploy APP to IG500:
-- Step 1: Upload the App.
+- Step 1: Upload the App.  <br/>
   Choose Edge Computing > Python Edge Computing > Application Program > Configure on the IG500, and click the add button.
 ![](images/2020-01-03-09-38-24.png)
  &nbsp;
@@ -262,7 +262,7 @@ After you run the App release package construction command, the App is automatic
 ![](images/2020-01-03-09-38-57.png)
  &nbsp;
 
-- Step 2: Enable the App.
+- Step 2: Enable the App.  <br/>
   After the upload, select the Enable checkbox of HelloWorld and click Submit. Then the App automatically runs and will run every time the IG500 is started.
 ![](images/2020-01-03-10-56-50.png)
  &nbsp;
@@ -278,12 +278,12 @@ Click the log viewing icon to display the running log of the App.
 ![](images/2020-01-03-11-00-15.png)
 ![](./images/2019-12-05-14-54-03.png)
 ### Update Configuration File for App
-- Step 1: Modify the configuration file.
+- Step 1: Modify the configuration file.  <br/>
   Modify ```description:"hello world!"``` in the config.yaml file of the App into  ```description: "hello inhand!"```.  
 ![](./images/2019-12-05-14-54-34.png) <br/>
  &nbsp;
 
-- Step 2: Import the configuration file and restart the App.
+- Step 2: Import the configuration file and restart the App.  <br/>
   Choose Edge Computing > Python Edge Computing > Application Program > Configure on the IG500, import the modified configuration file of HelloWorld, and restart the App.  
 ![](images/2020-01-03-11-02-39.png)
 ![](images/2020-01-03-11-02-59.png)
