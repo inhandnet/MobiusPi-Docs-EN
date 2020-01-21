@@ -13,7 +13,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
  &nbsp;
 
   - Method 2: Set a fixed IP address <br/>
-    Set PC and IG500 FE 0/1 ports to be on the same subnet. Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
+     Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
   ![](images/2020-01-02-09-56-52.png)   
 <br/>
 
@@ -29,7 +29,7 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
 ![](images/2020-01-02-10-01-07.png)   
 &nbsp;
 
-- Step 5: To change the IP address of FE 0/1, choose Network > Ethernet > Configure to configure FE 0/1.
+- Step 5: To change the IP address of FE 0/1, choose Network > Network Interfaces > Ethernet > Configure to configure FE 0/1.
 ![](images/2020-01-02-10-02-28.png)  
 
 #### Connect IG500 to the Internet
@@ -47,12 +47,12 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
 
 #### Update the Software
 To obtain the latest version of IG500 and updated functions, contact the customer service center. To update the IG500 firmware or Python SDK, do as follows:
-- Update the IG500 firmware.  
+- Update the IG500 firmware.  <br/>
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.
 ![](images/2020-01-02-10-13-48.png)
  &nbsp;
 
-- Upgrade the Python SDK of IG500.  
+- Upgrade the Python SDK of IG500.  <br/> 
 Choose Edge Computing > Python Edge Computing > Edge Computing Engine. Select Python Engine, select an SDK file, and click Upgrade. Then the IG500 automatically performs the upgrade.
 ![](images/2020-01-02-10-14-59.png)
 
