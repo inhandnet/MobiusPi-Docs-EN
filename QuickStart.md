@@ -12,7 +12,8 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
      ![](images/2020-01-02-09-55-52.png) <br/>
  &nbsp;
 
-  - Method 2: Set a fixed IP address on the same subnet with FE 0/1 of IG500 for the PC. Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
+  - Method 2: Set a fixed IP address <br/>
+    Set PC and IG500 FE 0/1 ports to be on the same subnet. Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
   ![](images/2020-01-02-09-56-52.png)   
 <br/>
 
