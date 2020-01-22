@@ -68,7 +68,7 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
   ![](images/2020-01-21-11-39-12.png)
 
 ### Update the firmware
-To obtain the latest firmware version of IG902 and updated functions, contact the customer service center. To update the IG902 firmware, do as follows:<font color=#FF0000> (The firmware version should be 2.0.0.r12057 and above.)</font>   
+To obtain the latest firmware version of IG902 and updated functions, contact the customer service center. To update the IG902 firmware, do as follows:<font color=#FF0000> (The firmware version should be 2.0.0.r12057 and above)</font>   </br>
 Choose System > Firmware Upgrade page of IG902 and select the corresponding firmware file and click Start Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.  <font color=#FF0000> It is recommended to ensure that the IG902 has the https service enabled before the upgrade, otherwise the IG902 cannot be accessed through the web page after the upgrade. </font>
 ![](images/2020-01-21-14-20-39.png)
  &nbsp;
@@ -146,11 +146,14 @@ There are two ways to add docker images for Portainer.
 
 ## Appendix
 ### How to download docker images from gitlab / github 
-Choose Local > Registries page of Portainer and click Add registry to add a docker mirror repository (must be a public repository).  </br>
-![](images/2020-01-19-10-39-19.png)
-Then select Custom registry and configure the mirror repository information. After configuration, click Add registry.  </br>
-![](images/2020-01-21-15-40-36.png)
-After the mirror repository is successfully added, you can see the web page as shown below:  </br>
-![](images/2020-01-21-15-41-25.png)
-After the addition is successful, you can select the configured image repository when pulling the docker image.  </br>
+Choose Local > Registries page of Portainer and click Add registry to add a docker mirror repository (must be a public repository).
+![](images/2020-01-19-10-39-19.png)  </br>
+
+Then select Custom registry and configure the mirror repository information. After configuration, click Add registry.
+![](images/2020-01-21-15-40-36.png)  </br>
+
+After the mirror repository is successfully added, you can see the web page as shown below:
+![](images/2020-01-21-15-41-25.png)  </br>
+
+After the addition is successful, you can select the configured image repository when pulling the docker image.
 ![](images/2020-01-21-15-41-59.png)
