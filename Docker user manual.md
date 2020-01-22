@@ -62,7 +62,6 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
 ![](images/2020-01-21-11-35-11.png)
 
       ![](images/2020-01-21-11-35-37.png)  </br>
-   &nbsp;
 
     - Step 3: Choose Network > Static Routing > Configuration page of IG902 to add a static route for GE 0/1 port and click Submit. (Select "Gigabitethernet 0/1" for the interface item, and configure the other items according to the site network conditions.)
 ![](images/2020-01-21-11-33-52.png)  </br>
