@@ -51,11 +51,11 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
       When the network connection status is Connected and an IP address has been allocated, the IG902 has been connected to the Internet with the SIM card. 
       ![](images/2020-01-21-16-41-33.png)
 &nbsp;
+
   - Method 2: Connect to the Internet by Ethernet
     - Step 1: Use the Ethernet cable to connect the GE 0/1 and GE 0/2 ports of the IG902 respectively, as shown below: 
  
-      ![](images/2020-01-21-11-23-29.png)
-   </br>
+      ![](images/2020-01-21-11-23-29.png)  
 
     - Step 2: Choose Network > Network Interface > Ethernet > Gigabit Ethernet 0/1 page of IG902 to configure the IP address of the GE 0/1 port and click Submit. (When the network type is a static IP address, you need to configure the IP, subnet mask, and other information according to the site network conditions.)
 ![](images/2020-01-21-11-35-11.png)
