@@ -12,3 +12,8 @@ Welcome to MobiusPi development platform!
 
    QuickStart.md
 
+.. toctree::
+   :maxdepth: 2
+   :caption: User manual
+
+   Docker user manual.md
