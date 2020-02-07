@@ -56,11 +56,13 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
     - Step 1: Use the Ethernet cable to connect the GE 0/1 and GE 0/2 ports of the IG902 respectively, as shown below: 
  
       ![](images/2020-01-21-11-23-29.png)  </br>
+&nbsp;
 
     - Step 2: Choose Network > Network Interface > Ethernet > Gigabit Ethernet 0/1 page of IG902 to configure the IP address of the GE 0/1 port and click Submit. (When the network type is a static IP address, you need to configure the IP, subnet mask, and other information according to the site network conditions.)
 ![](images/2020-01-21-11-35-11.png)
 
       ![](images/2020-01-21-11-35-37.png)  </br>
+&nbsp;
 
     - Step 3: Choose Network > Static Routing > Configuration page of IG902 to add a static route for GE 0/1 port and click Submit. (Select "Gigabitethernet 0/1" for the interface item, and configure the other items according to the site network conditions.)
 ![](images/2020-01-21-11-33-52.png)  </br>
