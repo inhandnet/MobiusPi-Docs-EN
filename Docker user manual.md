@@ -16,7 +16,7 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
 
 
   - Method 2: Set a fixed IP address  <br/>
-     Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.   
+     Select Use the following IP address, enter an IP address (By default,any from 192.168.2.2 to 192.168.2.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.2.1), and DNS server address, and click OK.   
 
     ![](images/2020-01-21-15-57-32.png)  
 <br/>
@@ -36,7 +36,7 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
 - Step 5: To change the IP address of GE 0/2, choose Network > Network Interfaces > Ethernet > Gigabitethernet 0/2 page of IG902 to configure GE 0/2.
 ![](images/2020-01-21-10-42-52.png)  
 
-### Connect IG902 to the Internet
+### Set WAN Parameters: Connect IG902 to the Internet
   - Method 1: Connect to the Internet by SIM card
     - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG902.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG902.  <br/>
 
@@ -79,27 +79,23 @@ Choose System > Firmware Upgrade page of IG902 and select the corresponding firm
 ## Enable and configure Docker manager
 ### Install Docker SDK and enable Docker manager
 The Docker SDK integrates the operating environment and docker image manager required to run the docker image. Before using Docker, you must install the Docker SDK. To obtain the Docker SDK, please contact the customer service center.  </br>
-- Step 1: If you already have the Docker SDK, choose Edge Computing > Docker Manager page of IG902 and import the Docker SDK.
-![](images/2020-01-21-14-21-24.png)  </br>
+- Step 1: If you already have the Docker SDK, choose Edge Computing > Docker Manager page of IG902, close the Docker Manager and import the Docker SDK.
+![](images/2020-02-12-17-27-06.png)  </br>
    &nbsp;
 
-  After importing, IG902 will automatically install the Docker SDK. The installation process usually takes 1-2 minutes. Please be patient.
-![](images/2020-01-21-14-21-45.png)  </br>
-   &nbsp;
-   
-- Step 2: After successful installation, select Enable Docker Manager and click Submit.
-![](images/2020-01-21-14-41-34.png)  </br>
+- Step 2: After importing, IG902 will automatically install the Docker SDK. The installation process usually takes 1-2 minutes. Please be patient. After successful installation, select Enable Docker Manager and click Submit.
+![](images/2020-02-11-15-19-42.png)  </br>
    &nbsp;
    
 - Step 3: Then you can modify the port number and login password to access the Docker manager.
-![](images/2020-01-21-14-43-50.png)
+![](images/2020-02-11-15-23-39.png)
 
 ### Configure Docker Manager--Portainer
 IG902 uses Portainer to build, manage and maintain Docker images and containers. For a detailed introduction and instructions on Portainer, please see the [Portainer official website](https://www.portainer.io/overview/). This document will show you how to add and deploy an Nginx docker image on IG902.
 
 #### Access Portainer
 - Step 1: Click Portainer's access button, and Portainer will prompt you to enter your username and password. At this time, copy the user name and the set password from the Edge Computing > Docker Manager page of IG902 and click Login.
-![](images/2020-01-21-14-44-16.png)
+![](images/2020-02-11-15-27-41.png)
 ![](images/2020-01-21-14-36-08.png)  </br>
    &nbsp;
    
@@ -117,7 +113,7 @@ IG902 uses Portainer to build, manage and maintain Docker images and containers.
 #### Add docker image
 There are two ways to add docker images for Portainer.
 - Method 1: Import the local docker image from the Edge Computing > Docker Manager page of IG902. (The time required for import varies depending on the size of the docker image; please be patient when the docker image is large.)
-![](images/2020-01-21-14-44-52.png)  </br>
+![](images/2020-02-11-15-29-07.png)  </br>
    &nbsp;
    
   You can see the docker image successfully imported on the Local > Images page of Portainer.
