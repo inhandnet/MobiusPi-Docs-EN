@@ -21,7 +21,7 @@ This document is used to explain the basic configuration operations of InGateway
  &nbsp;
 
 - After successful login, you can see the web page as shown below: 
-![](images/2020-01-21-10-34-39.png)  
+![](images/2020-02-13-23-19-40.png)  
  &nbsp;
 
 - Step 4: To change the user name and password for logging in to the web management interface of IG902, choose System > User Management page of IG902 and set the new user name and password. 
@@ -128,10 +128,6 @@ To run and debug Python code on IG902, you need to enable IG902's debug mode.  C
 After the debugging mode is enabled, IG902 will start an SSH server to listen on port 222 of LAN (default IP address being 192.168.2.1). The user name and password of the SSH server are displayed on the previous web page. A random password is generated every time the debugging mode is enabled or the IG902 is restarted to ensure security.
 
 ## Appendix
-### User Management
-If you need to modify the user name and password of the web management interface or manage existing users and user permissions, you can choose System Management > User Management to manage.
-![](images/2020-01-21-10-37-54.png)
-
 ### Factory reset
 There are two ways to restore the IG902 to factory settings: hardware factory reset and software factory reset
 - Hardware factory reset
