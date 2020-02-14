@@ -21,7 +21,7 @@ This document is used to explain the basic configuration operations of InGateway
  &nbsp;
 
 - After successful login, you can see the web page as shown below: 
-![](images/2020-02-13-23-19-40.png)  
+![](images/2020-02-14-11-13-27.png)  
  &nbsp;
 
 - Step 4: To change the user name and password for logging in to the web management interface of IG902, choose System > User Management page of IG902 and set the new user name and password. 
@@ -65,7 +65,7 @@ This document is used to explain the basic configuration operations of InGateway
     - Step 4: Choose System > Network Tools page of IG902 and use the Ping tool to check whether the IG902 has successfully connected to the Internet. The following figure shows that IG902 have successfully connected to the Internet:
   ![](images/2020-01-21-11-39-12.png)
 
-## 2. Update the Software
+## Update the Software
 To obtain the latest software version of IG902 and updated functions, contact the customer service center. To update the IG902 software version, do as follows:
 - Update the IG902 firmware.  <br/>
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.
@@ -138,4 +138,4 @@ There are two ways to restore the IG902 to factory settings: hardware factory re
    
 - Software factory reset  
   Choose System Management > Configuration Management, click the reset button and select OK. IG902 will complete the factory reset operation by itself.
-  ![](images/2020-02-12-15-07-06.png)
+  ![](images/2020-02-14-20-42-48.png)

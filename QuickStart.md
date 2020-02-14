@@ -18,19 +18,19 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
 <br/>
 
 - Step 2: Launch the browser on the PC and access the IP address of FE 0/1. Enter the login user name and password. The default user name and password are adm and 123456 respectively.  
-   ![](images/2020-01-02-18-22-09.png)
+   ![](images/2020-02-14-16-28-07.png)
  &nbsp;
 
 - Step 3: After successful login, you can see the web page as shown below:
-![](images/2020-01-02-18-21-37.png)   
+![](images/2020-02-14-10-03-48.png)   
  &nbsp;
 
 - Step 4: To change the user name and password for logging in to the web management interface of IG500, choose System > User Management and set the new user name and password.
-![](images/2020-01-02-10-01-07.png)   
+![](images/2020-02-14-10-05-13.png)   
 &nbsp;
 
-- Step 5: To change the IP address of FE 0/1, choose Network > Network Interfaces > Ethernet > Configure to configure FE 0/1.
-![](images/2020-01-02-10-02-28.png)  
+- Step 5: To change the IP address of FE 0/1, choose Network > Network Interfaces > Ethernet to configure FE 0/1.
+![](images/2020-02-14-10-18-03.png)  
 
 #### Connect IG500 to the Internet
 - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG500.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
@@ -38,12 +38,12 @@ Connect IG500 to the power source and to a PC with an Ethernet cable according t
   ![](images/2020-01-02-10-10-25.png) <br/>
  &nbsp;
 
-- Step 2: Choose Network > Network Interfaces > Cellular > Configure and select Enable Cellular.
-![](images/2020-01-02-10-12-30.png)
+- Step 2: Choose Network > Network Interfaces > Cellular and select Enable Cellular.
+![](images/2020-02-13-14-36-40.png)
 &nbsp;
 
   When the network connection status is Connected and an IP address has been allocated, the IG500 has been connected to the Internet with the SIM card.  
-![](images/2020-01-03-11-30-47.png)
+![](images/2020-02-14-10-21-15.png)
 
 #### Update the Software
 To obtain the latest version of IG500 and updated functions, contact the customer service center. To update the IG500 firmware or Python SDK, do as follows:
