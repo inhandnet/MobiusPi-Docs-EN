@@ -26,7 +26,7 @@ Connect IG902 to the power source and to a PC with an Ethernet cable according t
  &nbsp;
 
 - After successful login, you can see the web page as shown below: 
-![](images/2020-02-13-23-19-40.png)  
+![](images/2020-02-14-11-13-27.png)  
  &nbsp;
 
 - Step 4: To change the user name and password for logging in to the web management interface of IG902, choose System > User Management page of IG902 and set the new user name and password. 
