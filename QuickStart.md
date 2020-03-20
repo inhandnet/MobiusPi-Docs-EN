@@ -1,67 +1,34 @@
 # **MobiusPi Python Development Quick Start**
-MobiusPi is the code name of InGateway series software and hardware products of Beijing InHand Networks Technology Co., Ltd.  <br/> The InGateway includes two main product series, InGateway900 and InGateway500. This document uses InGateway500 series (IG500 for short) as an example to demonstrate how to develop Python App with MobiusPI.
+MobiusPi is the code name of InGateway series software and hardware products of Beijing InHand Networks Technology Co., Ltd.  <br/> The InGateway includes two main product series, InGateway900(IG900 for short) and InGateway500(IG500 for short). This document aims to explain to users how to use the MobiusPi hardware product for Python development. 
 ## Building the MobiusPi Development Environment
-### Prepare IG500 Hardware and Network Environment
-#### Connect IG500 to the Power Source and to a PC with a Network Cable
-Connect IG500 to the power source and to a PC with an Ethernet cable according to the topology diagram.
-![](images/2020-01-02-09-45-35.png)
-#### Set LAN Parameters: Access the IG500 Through LAN
-- Step 1: Set the PC's IP address to be on the same subnet with FE 0/1. By default, the IP address of FE 0/1 on IG500 is 192.168.1.1.  
-  - Method 1: Enable the PC to obtain an IP address automatically (recommended).  
+### Prepare Hardware and Network Environment
+#### Connect MobiusPi to the Power Source and to a PC with a Network Cable
+- Prepare IG500 Hardware  
+  
+  Connect IG500 to the power source and to a PC with an Ethernet cable according to the topology diagram.  <br/>
+![](images/2020-02-20-09-23-14.png)  
 
-     ![](images/2020-01-02-09-55-52.png) <br/>
- &nbsp;
+- Prepare IG900 Hardware  
+  
+  Connect IG900 to the power source and to a PC with an Ethernet cable according to the topology diagram.  <br/>
+![](images/2020-02-20-16-11-49.png)
+#### Set LAN Parameters
+- To set the IG500 LAN network parameters, see [Access the IG500 Through LAN](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG501%20Quick%20Start%20Manual.html#set-lan-parameters-access-the-ig501-through-lan).
+- To set the IG900 LAN network parameters, see [Access the IG900 Through LAN](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#set-lan-parameters-access-the-ig902-through-lan).
 
-  - Method 2: Set a fixed IP address <br/>
-     Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.  <br/>
-  ![](images/2020-01-02-09-56-52.png)   
-<br/>
-
-- Step 2: Launch the browser on the PC and access the IP address of FE 0/1. Enter the login user name and password. The default user name and password are adm and 123456 respectively.  
-   ![](images/2020-02-14-16-28-07.png)
- &nbsp;
-
-- Step 3: After successful login, you can see the web page as shown below:
-![](images/2020-02-14-10-03-48.png)   
- &nbsp;
-
-- Step 4: To change the user name and password for logging in to the web management interface of IG500, choose System > User Management and set the new user name and password.
-![](images/2020-02-14-10-05-13.png)   
-&nbsp;
-
-- Step 5: To change the IP address of FE 0/1, choose Network > Network Interfaces > Ethernet to configure FE 0/1.
-![](images/2020-02-14-10-18-03.png)  
-
-#### Connect IG500 to the Internet
-- Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG500.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
-
-  ![](images/2020-01-02-10-10-25.png) <br/>
- &nbsp;
-
-- Step 2: Choose Network > Network Interfaces > Cellular and select Enable Cellular.
-![](images/2020-02-13-14-36-40.png)
-&nbsp;
-
-  When the network connection status is Connected and an IP address has been allocated, the IG500 has been connected to the Internet with the SIM card.  
-![](images/2020-02-14-10-21-15.png)
+#### Set WAN Parameters
+- To set the IG500 WAN network parameters, see [Connect IG500 to the Internet](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG501%20Quick%20Start%20Manual.html#set-wan-parameters-connect-ig500-to-the-internet).
+- To set the IG900 WAN network parameters, see [Connect IG900 to the Internet](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#set-wan-parameters-connect-ig902-to-the-internet).
 
 #### Update the Software
-To obtain the latest version of IG500 and updated functions, contact the customer service center. To update the IG500 firmware or Python SDK, do as follows:
-- Update the IG500 firmware.  <br/>
-  Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.
-![](images/2020-02-14-21-04-40.png)
- &nbsp;
+To obtain the latest version and updated functions, contact the customer service center. To update the software, do as follows:
+- [Update the IG500 Software](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG501%20Quick%20Start%20Manual.html#update-the-software)
+- [Update the IG900 Software](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#update-the-software)
 
-- Upgrade the Python SDK of IG500.  <br/> 
-Choose Edge Computing > Python Edge Computing. Select Python Engine, select an SDK file, and click Upgrade. Then the IG500 automatically performs the upgrade.
-![](images/2020-02-15-16-35-17.png)
-
-#### Enable the Debug Mode of IG500
-If you need to run and debug Python code on IG500 during development, you need enable the debug mode for IG500. Choose Edge Computing > Python Edge Computing and select Enable Debug Mode. Then you can develop IG500 with VS Code.
-![](images/2020-02-15-16-37-48.png)
- &nbsp;
-
-After the debugging mode is enabled, IG500 will start an SSH server to listen on port 222 of LAN (default IP address being 192.168.1.1). The user name and password of the SSH server are displayed on the previous web page. A random password is generated every time the debugging mode is enabled or the IG500 is restarted to ensure security.
+#### Enable the Debug Mode of MobiusPi
+If you need to run and debug Python code on MobiusPi during development, you need enable the debug mode of MobiusPi. 
+- [Enable the Debug Mode of IG500](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG501%20Quick%20Start%20Manual.html#enable-the-debug-mode)
+- [Enable the Debug Mode of IG900](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#enable-the-debug-mode)
 
 ### Install Software on PC
 #### Install a Python Interpreter
@@ -77,10 +44,10 @@ Download the software and run the installation program. After the software is su
 ![](images/2020-01-02-10-17-13.png)
 ### Prepare the Development Environment of VS Code
 #### Install the VS Code Plug-ins
-To develop and debug Python code on IG500, you need to install the following plug-ins in Extensions of VS Code IDE.  
+To develop and debug Python code on MobiusPi, you need to install the following plug-ins in Extensions of VS Code IDE.  
 - `Python`: a VS Code Python plug-in with abundant functions and features, including IntelliSense, linting, debugging, code navigation, code formatting, Jupyter notebook support, refactoring, variable explorer, test explorer, snippets, and more! To get more information, visit the [official website](https://code.visualstudio.com/docs/languages/python) of the plug-in.  
 - `Project Templates`: a VS Code extended plug-in used to quickly create projects based on custom templates. We will release several Python App templates. You can use Project Templates to import templates and quickly initialize projects.  
-- `SFTP`: used to upload code to IG500 with the SFTP Sync plug-in.
+- `SFTP`: used to upload code to MobiusPi with the SFTP Sync plug-in.
 ![](images/2020-01-02-10-19-57.png)  
 
   ![](images/2020-01-02-10-22-26.png)  
@@ -112,7 +79,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
 
   Open the project template folder helloworld-template, as shown below. The project template includes:
   - `.vscode`: VS Code configuration folder
-    - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the IG500
+    - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the MobiusPi
   - `build`: folder of App release package
   - `src`: folder of App source code
     - `main.py`: App entrance
@@ -133,7 +100,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
 ##### Customize Project Template
 - Step 1: Create a project template folder, which must include the following content. You can add other information according to your needs.
   - `.vscode`: VS Code configuration folder (Entering `>SFTP:Config` on the VS Code command interface can quickly create a .vscode folder and an sftp.json file.)
-    - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the IG500
+    - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the MobiusPi
   - `build`: folder of App release package
   - `src`: folder of App source code
     - `main.py`: App entrance
@@ -147,7 +114,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
 - Step 3: Enter `>Project:Save Project as Template` on the command interface to save the current project file as a template.
 
 ## Compiling the First MobiusPi App: Hello World
-In this course, an App named HelloWorld is used as an example to describe how to develop Python Apps with VS code on IG500. This App can print a "hello world!" log on IG500 every 10s, import configuration files to modify log content.
+In this course, an App named HelloWorld is used as an example to describe how to develop Python Apps with VS code on MobiusPi. This App can print a "hello world!" log on MobiusPi every 10s, import configuration files to modify log content.
 ### Use Template to Create Project
 - Step 1: Use VS Code to open the Python App project folder, as shown below:
 ![](images/2020-01-02-10-36-39.png)
@@ -165,14 +132,14 @@ In this course, an App named HelloWorld is used as an example to describe how to
 ![](images/2020-01-02-10-42-36.png)
 
 ### Coding
-The standard project template helloworld-template can print a "hello world!" log on IG500 every 10s, import configuration files to modify log content. To change the App name, modify the code in `main.py` and `setup.py` as follows: <font color=#FF0000>(Note: The Python App names cannot contain spaces.) </font>
+The standard project template helloworld-template can print a "hello world!" log on MobiusPi every 10s, import configuration files to modify log content. To change the App name, modify the code in `main.py` and `setup.py` as follows: <font color=#FF0000>(Note: The Python App names cannot contain spaces.) </font>
 ![](images/2020-01-02-16-21-11.png)  
 
 ![](images/2020-01-02-16-22-29.png)
 
 ### Debugging
 #### Set Up an SFTP Connection
-Before debugging code remotely, you need to upload the local code to a remote server, namely, the IG500. Before uploading the code, ensure that the debug mode of IG500 has been enabled as follows:
+Before debugging code remotely, you need to upload the local code to a remote server, namely, the MobiusPi. Before uploading the code, ensure that the debug mode of MobiusPi has been enabled as follows:
 ![](images/2020-02-15-16-43-24.png)
  &nbsp;
 
@@ -182,11 +149,22 @@ Before debugging code remotely, you need to upload the local code to a remote se
  &nbsp;
 
 - Step 2: Configure the SFTP connection.  <br/>
-  In the `sftp.json` file, configure the SFTP connection according to the parameters on the Edge Computing > Python Edge Computing interface.
+  - Configure the IG500 SFTP connection  
+  
+    In the `sftp.json` file, configure the SFTP connection according to the parameters on the Edge Computing > Python Edge Computing interface.
   <font color=#FF0000>Note: The Python App name must be the same as the App name in `mian.py`. </font>
 
-  ![](images/2020-01-02-16-35-26.png)
- &nbsp;
+    ![](images/2020-02-20-10-14-07.png)  
+
+   &nbsp;
+
+  - Configure the IG900 SFTP connection  
+  
+    In the `sftp.json` file, configure the SFTP connection according to the parameters on the Edge Computing > Python Edge Computing interface.
+  <font color=#FF0000>Note: The Python App name must be the same as the App name in `mian.py`. </font>
+
+    ![](images/2020-02-20-10-16-03.png)  
+<br/>
 
 - Step 3: When the configuration is completed and saved, enter `>SFTP:Open SSH in Terminal` on the command interface to connect to the remote server.
 ![](images/2020-01-02-18-14-52.png)
@@ -204,7 +182,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ![](images/2020-01-02-18-23-14.png)
  &nbsp;
 
-  When the SFTP connection is successfully set up with IG500, the following information is displayed:
+  When the SFTP connection is successfully set up with MobiusPi, the following information is displayed:
 ![](images/2020-01-02-18-23-49.png)
 
 #### Debug Code
@@ -226,12 +204,12 @@ Before debugging code remotely, you need to upload the local code to a remote se
   ```
   python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
   ```
-  - `192.168.1.1`: IP address of FE 0/1 on IG500
+  - `192.168.1.1`: IP address of FE 0/1 on IG500 (<font color=#FF0000>When using IG900, the IP address of GE 0/2 port should be filled in here</font>)
   - `3000`: recommended debugging port number
   - `HelloWorld/src/main.py`: execution path of `mian.py`, which should be modified according to your needs.  <br/>
 &nbsp;
 
-  The Python development environment of IG500 has a built-in ptvsd dependent library for remote code debugging. To learn about more usage information about ptvsd plug-in, see [ptvsd usage](https://github.com/microsoft/ptvsd/).
+  The Python development environment of MobiusPi has a built-in ptvsd dependent library for remote code debugging. To learn about more usage information about ptvsd plug-in, see [ptvsd usage](https://github.com/microsoft/ptvsd/).
   ![](images/2020-01-02-18-27-40.png)  
 
   ![](images/2020-01-02-18-28-24.png)
@@ -241,7 +219,7 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ![](images/2020-01-02-18-30-13.png)
 
 ### Construct App Release Package
-When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other IG500s.
+When the debugging is completed, you can construct the App release package so that the App can be quickly deployed to other MobiusPis.
 - Step 1: Construct an App release package.  <br/>
   Run the `build_py_app.sh HelloWorld` command in the TERMINAL window to construct an App release package, namely, the build_py_app.sh Python App name.
 ![](images/2020-01-02-18-31-55.png)
@@ -255,27 +233,13 @@ When the debugging is completed, you can construct the App release package so th
   After the download is completed, you can see the HelloWorld App release package in the build directory.
 ![](images/2020-01-02-18-32-54.png)
 
-### Deploy App on the InGateway Web Page
-After you run the App release package construction command, the App is automatically generated on the connected IG500, but this APP cannot be started normally. Please follow the procedure to deploy APP to IG500:
-- Step 1: Upload the App.  <br/>
-  Choose Edge Computing > Python Edge Computing on the IG500, and click the add button.
-![](images/2020-02-15-16-47-15.png)
- &nbsp;
-
-  Select the HelloWorld release package in the "build" directory.
-![](images/2020-02-15-16-49-03.png)
-&nbsp;
-
-- Step 2: Enable the App.  <br/>
-  After the upload, select the Enable checkbox of HelloWorld and click Submit. Then the App automatically runs and will run every time the IG500 is started.
-![](images/2020-02-15-16-53-58.png)
- &nbsp;
-
-  On the App status interface, you can see that the App has successfully run on the IG500. The HelloWorld App deployment is completed.
-![](images/2020-02-15-16-54-40.png)
+### Deploy App on the Web Page
+After you run the App release package construction command, the App is automatically generated on the connected MobiusPi, but this App cannot be started normally. Please follow the procedure to deploy App to MobiusPi:
+- [Deploy App to IG500](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG501%20Quick%20Start%20Manual.html#install-and-run-python-app)
+- [Deploy App to IG900](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#install-and-run-python-app)
 
 ### Check App Status
-Choose Edge Computing > Python Edge Computing on the IG500. You can see the running status of the App.
+Choose Edge Computing > Python Edge Computing on the MobiusPi. You can see the running status of the App.
 ![](images/2020-02-15-16-54-40.png)
 
 Click the log viewing icon to display the running log of the App.
@@ -289,7 +253,7 @@ Click the log viewing icon to display the running log of the App.
  &nbsp;
 
 - Step 2: Import the configuration file and restart the App.  <br/>
-  Choose Edge Computing > Python Edge Computing on the IG500, import the modified configuration file of HelloWorld, and restart the App.  
+  Choose Edge Computing > Python Edge Computing on the MobiusPi, import the modified configuration file of HelloWorld, and restart the App.  
 ![](images/2020-02-15-16-58-05.png)
  &nbsp;
 
@@ -297,11 +261,11 @@ After the restart, the HelloWorld App runs with the modified configuration file.
 ![](./images/2019-12-06-15-20-04.png)
 ### Appendix
 #### Use pip to Install the Dependent Library for App
-To install the dependent library for App with pip, you need to enable the debugging mode for the IG500 and connect the IG500 to the Internet.
+To install the dependent library for App with pip, you need to enable the debugging mode for the MobiusPi and connect the MobiusPi to the Internet. The following uses the HelloWorld App to install the `xlrd` dependent library as an example to explain how to install third-party dependent libraries:
 ![](images/2020-02-15-16-37-48.png)  
 
 ![](images/2020-02-14-10-21-15.png)
-- Step 1: Use VS Code to set up an SFTP connection with the IG500. For details, see [Set Up an SFTP Connection](https://ingateway-development-docs-en.readthedocs.io/en/latest/QuickStart.html#set-up-an-sftp-connection).
+- Step 1: Use VS Code to set up an SFTP connection with the MobiusPi. For details, see [Set Up an SFTP Connection](https://ingateway-development-docs-en.readthedocs.io/en/latest/QuickStart.html#set-up-an-sftp-connection).
 ![](images/2020-01-03-11-07-08.png)
  &nbsp;
 
@@ -326,7 +290,7 @@ To install the dependent library for App with pip, you need to enable the debugg
  &nbsp;
 
   If a dependent library is installed for the App, you must configure the environment variables for the App before debugging; otherwise, the App cannot run normally during debugging.   
-  After enabling the App in IG500, the environment variables of the third-party dependent library in the App's lib folder will be automatically added to the APP, without manual configuration.<br/>
+  After enabling the App in MobiusPi, the environment variables of the third-party dependent library in the App's lib folder will be automatically added to the App, without manual configuration.<br/>
  &nbsp;
 
 - Step 5: Execute code to ensure that the App runs normally.
@@ -358,7 +322,7 @@ To improve the coding efficiency, enable automatic code completion by using Pyth
 ![](images/2020-01-03-14-28-23.png)
  &nbsp;
 
-  A1: The possible reason is that the key of IG500 has been changed, but the key on the PC has not been updated. Therefore, the verification fails. You only need to delete the conflict line in the key file. (Pressing Ctrl and clicking the conflict item at the same time can quickly access the link.)
+  A1: The possible reason is that the key of MobiusPi has been changed, but the key on the PC has not been updated. Therefore, the verification fails. You only need to delete the conflict line in the key file. (Pressing Ctrl and clicking the conflict item at the same time can quickly access the link.)
 ![](images/2020-01-03-14-32-17.png)
  &nbsp;
 
@@ -370,4 +334,4 @@ To improve the coding efficiency, enable automatic code completion by using Pyth
 ![](images/2020-01-03-14-36-41.png)
  &nbsp;
 
-  A2: Ensure that the password in the sftp.json file is the same as the password of the IG500. Then set up the SFTP connection and synchronize code again.
+  A2: Ensure that the password in the sftp.json file is the same as the password of the MobiusPi. Then set up the SFTP connection and synchronize code again.
