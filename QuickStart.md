@@ -336,5 +336,6 @@ To improve the coding efficiency, enable automatic code completion by using Pyth
 
   A2: Ensure that the password in the sftp.json file is the same as the password of the MobiusPi. Then set up the SFTP connection and synchronize code again.
   <br> </br>
-- Q3: I need to use IG900 serial port and network port during development. How to use it?  
+- Q3: I need to use IG900 serial port and network port during development. How to use it?
+  
   A3: The name of the RS485 serial port is: `/dev/ttyO3`; the name of the RS232 serial port is:`/dev/ttyO1`. Both serial and network ports can be invoked using Python's standard serial / network port usage methods, such as using the `pyserial` library to call the serial port.
