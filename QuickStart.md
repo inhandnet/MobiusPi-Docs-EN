@@ -42,6 +42,10 @@ Obtain the Visual Studio Code software (VS Code for short) from https://code.vis
 
 Download the software and run the installation program. After the software is successfully installed, launch the VS Code software, as shown below.
 ![](images/2020-01-02-10-17-13.png)
+
+#### Install OpenSSH
+Obtain the OpenSSH tool from https://www.openssh.com and install it to the PC to make the PC support the SSH protocol.
+
 ### Prepare the Development Environment of VS Code
 #### Install the VS Code Plug-ins
 To develop and debug Python code on MobiusPi, you need to install the following plug-ins in Extensions of VS Code IDE.  
@@ -170,8 +174,8 @@ Before debugging code remotely, you need to upload the local code to a remote se
 ![](images/2020-01-02-18-14-52.png)
  &nbsp;
 
-- Step 4: You are prompted to enter the SFTP server's IP address, namely, host.
-![](images/2020-01-02-18-15-28.png)
+- Step 4: You are prompted to select a folder. At this point, select the SFTP server in `sftp.json` and press Enter.
+![](images/2020-04-21-19-25-33.png)
  &nbsp;
 
 - Step 5: If it is the first time to set up the SFTP connection, the TERMINAL window displays a message asking you whether to continue the connection. Enter Yes and press Enter. Enter `>SFTP:Open SSH in Terminal` and SFTP server's IP address on the command interface again.
@@ -339,3 +343,8 @@ To improve the coding efficiency, enable automatic code completion by using Pyth
 - Q3: I need to use IG900 serial port and network port during development. How to use it?
   
   A3: The name of the RS485 serial port is: `/dev/ttyO3`; the name of the RS232 serial port is:`/dev/ttyO1`. Both serial and network ports can be invoked using Python's standard serial / network port usage methods, such as using the `pyserial` library to call the serial port.
+
+- Q4: **SSH error** is displayed when establishing an SFTP connection with MobiusPi.As shown below: 
+  ![](images/2020-04-21-20-11-13.png)  
+  
+  A4: Please install the OpenSSH tool to support the SSH protocol. You can obtain the OpenSSH tool from https://www.openssh.com.
