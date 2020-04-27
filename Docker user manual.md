@@ -7,74 +7,14 @@ Docker is an open source application container engine that allows developers to 
 Connect IG902 to the power source and to a PC with an Ethernet cable according to the topology diagram.   <br/>
 ![](images/2020-01-21-10-08-56.png)
 
-### Set LAN Parameters: Access the IG902 Through LAN
-- Step 1: Set the PC’s IP address to be on the same subnet with GE 0/2. By default, the IP address of GE 0/2 on IG902 is 192.168.2.1. 
-  - Method 1: Enable the PC to obtain an IP address automatically (recommended)  
+#### Set LAN Parameters: Access the IG902 Through LAN
+To set the IG900 LAN network parameters, see [Access the IG900 Through LAN](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#set-lan-parameters-access-the-ig902-through-lan).
 
-     ![](images/2020-01-02-09-55-52.png) <br/>
- &nbsp;
-
-
-  - Method 2: Set a fixed IP address  <br/>
-     Select Use the following IP address, enter an IP address (By default,any from 192.168.2.2 to 192.168.2.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.2.1), and DNS server address, and click OK.   
-
-    ![](images/2020-01-21-15-57-32.png)  
-<br/>
-
-- Step 2: Launch the browser on the PC and access the IP address of GE 0/2. Enter the login user name and password. The default user name and password are adm and 123456 respectively.
-![](images/2020-01-21-14-19-06.png)   
- &nbsp;
-
-- After successful login, you can see the web page as shown below: 
-![](images/2020-02-14-11-13-27.png)  
- &nbsp;
-
-- Step 4: To change the user name and password for logging in to the web management interface of IG902, choose System > User Management page of IG902 and set the new user name and password. 
-![](images/2020-01-21-10-37-54.png)
-&nbsp;
-
-- Step 5: To change the IP address of GE 0/2, choose Network > Network Interfaces > Ethernet > Gigabitethernet 0/2 page of IG902 to configure GE 0/2.
-![](images/2020-01-21-10-42-52.png)  
-
-### Set WAN Parameters: Connect IG902 to the Internet
-  - Method 1: Connect to the Internet by SIM card
-    - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG902.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG902.  <br/>
-
-      ![](images/2020-01-21-11-14-06.png)  <br/>
- &nbsp;
-
-
-    - Step 2: Choose Network > Network Interfaces > Cellular page of IG902 and select Enable Cellular and click Submit.
-![](images/2020-01-21-11-05-24.png)
-&nbsp;
-
-      When the network connection status is Connected and an IP address has been allocated, the IG902 has been connected to the Internet with the SIM card. 
-      ![](images/2020-01-21-16-41-33.png)
-&nbsp;
-
-  - Method 2: Connect to the Internet by Ethernet
-    - Step 1: Use the Ethernet cable to connect the GE 0/1 and GE 0/2 ports of the IG902 respectively, as shown below: 
- 
-      ![](images/2020-01-21-11-23-29.png)  </br>
-&nbsp;
-
-    - Step 2: Choose Network > Network Interface > Ethernet > Gigabit Ethernet 0/1 page of IG902 to configure the IP address of the GE 0/1 port and click Submit. (When the network type is a static IP address, you need to configure the IP, subnet mask, and other information according to the site network conditions.)
-![](images/2020-01-21-11-35-11.png)
-
-      ![](images/2020-01-21-11-35-37.png)  </br>
-&nbsp;
-
-    - Step 3: Choose Network > Static Routing > Configuration page of IG902 to add a static route for GE 0/1 port and click Submit. (Select "Gigabitethernet 0/1" for the interface item, and configure the other items according to the site network conditions.)
-![](images/2020-01-21-11-33-52.png)  </br>
-   &nbsp;
-    - Step 4: Choose System > Network Tools page of IG902 and use the Ping tool to check whether the IG902 has successfully connected to the Internet. The following figure shows that IG902 have successfully connected to the Internet:
-  ![](images/2020-01-21-11-39-12.png)
+#### Set WAN Parameters: Connect IG902 to the Internet
+To set the IG900 WAN network parameters, see [Connect IG900 to the Internet](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#set-wan-parameters-connect-ig902-to-the-internet).
 
 ### Update the firmware
-To obtain the latest firmware version of IG902 and updated functions, contact the customer service center. To update the IG902 firmware, do as follows:<font color=#FF0000> (The firmware version should be 2.0.0.r12057 and above)</font>   </br>
-Choose System > Firmware Upgrade page of IG902 and select the corresponding firmware file and click Start Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.  <font color=#FF0000> It is recommended to ensure that the IG902 has the https service enabled before the upgrade, otherwise the IG902 cannot be accessed through the web page after the upgrade. </font>
-![](images/2020-01-21-14-20-39.png)
- &nbsp;
+To obtain the latest firmware version of IG902 and updated functions, contact the customer service center. To update the IG902 firmware, see [Update the IG900 Software](https://ingateway-development-docs-en.readthedocs.io/en/latest/IG902%20Quick%20Start%20Manual.html#update-the-software).<font color=#FF0000> (The firmware version should be 2.0.0.r12057 and above)</font>
 
 ## Enable and configure Docker manager
 ### Install Docker SDK and enable Docker manager
@@ -111,7 +51,7 @@ IG902 uses Portainer to build, manage and maintain Docker images and containers.
 ![](images/2020-01-14-16-22-43.png)
 
 #### Add docker image
-There are two ways to add docker images for Portainer.
+There are two ways to add docker images for Portainer：
 - Method 1: Import the local docker image from the Edge Computing > Docker Manager page of IG902. (The time required for import varies depending on the size of the docker image; please be patient when the docker image is large.)
 ![](images/2020-02-11-15-29-07.png)  </br>
    &nbsp;
@@ -133,7 +73,7 @@ There are two ways to add docker images for Portainer.
    &nbsp;
    
 - Step 2: Configure the operating parameters for the container and deploy the container.
-![](images/2020-01-21-15-33-01.png)  </br>
+![](images/2020-04-27-14-58-45.png)  </br>
    &nbsp;
    
 - Step 3: The container will run automatically after deployment. You can view the container running status on Portainer's Local > Containers page.
