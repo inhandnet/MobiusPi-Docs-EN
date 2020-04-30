@@ -85,6 +85,7 @@ Decompress the downloaded project template package, run VS Code to open the hell
   - `.vscode`: VS Code configuration folder
     - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the MobiusPi
   - `build`: folder of App release package
+  - `lib`：App third-party dependent library folder
   - `src`: folder of App source code
     - `main.py`: App entrance
     - `parse_config.py`: App configuration file parsing
@@ -106,7 +107,6 @@ Decompress the downloaded project template package, run VS Code to open the hell
   - `.vscode`: VS Code configuration folder (Entering `>SFTP:Config` on the VS Code command interface can quickly create a .vscode folder and an sftp.json file.)
     - `sftp.json`: SFTP plug-in configuration file, used to set up SFTP connections with the MobiusPi
   - `build`: folder of App release package
-  - `lib`：App third-party dependent library folder
   - `src`: folder of App source code
     - `main.py`: App entrance
   - `setup.py`: information such as App version and SDK version. It is recommended to customize the information based on the standard template.  
