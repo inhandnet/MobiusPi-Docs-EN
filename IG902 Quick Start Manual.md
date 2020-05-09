@@ -91,7 +91,7 @@ choose Edge Computing > Docker Manager, close the Docker Manager and import the 
   Enter the account and password set in the figure above to log in to the Docker Manager.
 ![](images/2020-02-11-09-15-25.png)
 
-## Use Pyhon Edge Computing
+## Use Python Edge Computing
 ### Install and run Python App
 To install and run Python App (App for short) in IG902,  please refer to the following process:
 - Step 1: Install the App <br/>
