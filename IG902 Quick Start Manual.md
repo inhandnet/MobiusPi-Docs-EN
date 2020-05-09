@@ -121,34 +121,11 @@ If the installed App supports importing configuration files to modify the runnin
 - Step 2: Restart the App after the import is successful. After the App restarts, it will runing according to the imported configuration file.
   ![](images/2020-02-12-15-02-29.png)
 
-### Update Python App version
-Generally, if you need to update the Python App version, you only need to import the new version of the App on the Edge Computing > Python Edge Computing page.  
-![](images/2020-03-19-16-14-45.png)  
-
-After the update is completed, as shown below：  
-![](images/2020-03-19-16-16-20.png)
-
 ### Enable the Debug Mode
 To run and debug Python code on IG902, you need to enable IG902's debug mode.  Choose Edge Computing > Python Edge Computing, select Enable Debug Mode. After enabling, you can develop IG902 through VS Code. How to use VS Code for Python development of IG902, please refer to [Python Development Quick Start](https://ingateway-development-docs-en.readthedocs.io/en/latest/QuickStart.html).
 ![](images/2020-02-12-15-04-41.png)  
 
 After the debugging mode is enabled, IG902 will start an SSH server to listen on port 222 of LAN (default IP address being 192.168.2.1). The user name and password of the SSH server are displayed on the previous web page. A random password is generated every time the debugging mode is enabled or the IG902 is restarted to ensure security.
-
-## Device Manager
-The Device Manager developed by InHand supports functions such as monitoring IG900 status, remote maintenance of equipment, remote batch delivery of IG900 configuration, and IG900 batch upgrade, helping users to conveniently and efficiently manage IG900 and field devices. In order to enable the Device Manager to remotely manage the IG900 and field devices, the IG900 needs to be connected to the cloud platform. The connection method is as follows:  
-Choose System Management > Device Manager, tick Enable Device Manager and configure the corresponding server address and registered account, and click Submit after the configuration is complete.  
-- Server address: the address of the Device Manager. The address of the Device Manager developed by InHand is as follows:
-  - Domestic version Device Manager：`c.inhandcloud.com`  
-  - Overseas version Device Manager：`iot.inhandnetworks.com`  
-  - Domestic version InConnect：`ics.inhandiot.com`  
-  - Overseas version InConnect：`ics.inhandnetworks.com`  
-- Registered account: the Device Manager account associated with the IG900 device (if you have not registered an account, you need to register an account first)  
-- Advanced settings: Contains configurations such as heartbeat interval. Generally, you can use the default configuration.
-
-![](images/2020-03-19-16-26-25.png)   
-
-After the IG900 is successfully connected to the Device Manager, the status is described as Connection Accepted.  
-![](images/2020-03-19-16-27-08.png)  
 
 ## Appendix
 ### Factory reset
