@@ -55,7 +55,7 @@ To obtain the latest software version of IG501 and updated functions, contact th
 Choose Edge Computing > Python Edge Computing. Select Python Engine, select an Python SDK file, and click Upgrade; when the upgrade confirmation window pops up, click Confirm. Then the IG501 automatically performs the upgrade.
 ![](images/2020-02-12-14-09-43.png)  
 
-## Use Pyhon Edge Computing
+## Use Python Edge Computing
 ### Install and run Python App
 To install and run Python App (App for short) in IG501,  please refer to the following process:
 - Step 1: Install the App <br/>
